@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="developer" content="Manmohan singh"> 
+        <title>new website | topics</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+       <header>
+           <div class="container">
+               <div id="branding">
+                   <h1><span class="higlight">NEW</span> BLOG WEBSITE</h1>
+               </div>
+               <nav>
+                    <ul>
+                        <li ><a href="kali.html">HOME </a> </li>
+                        <li><a href="about.html">ABOUT </a> </li>
+                        <li class="current"><a href="topic.html">TOPICS</a> </li>
+                    </ul>
+               </nav>
+                
+            </div>
+        </header> 
+           
+            <section id="newsletter">
+                    <div class="container">
+                      
+                      <h1>subscribe to our blog website </h1>
+                      <form>
+                          <input type="email" placeholder="enter email . . . . . ">
+                          <button type="submit" class="button_1">subscribe</button>
+                      </form>
+                    </div>
+                </section>
+            <br>
+            <section id="main" >
+                <div class="container">
+                   <article id="main-col">
+                     <div id="qwer">  <h2>Footprinting</h2></div>
+                      <ul>
+                          <li>
+                              
+                          
+                           <h1>Techniques used for Footprinting</h1>
+                           <ul>
+                               <li class="dark">
+                                DNS queries
+                                </li>
+                                <p>A DNS query is the process of a computer or networking device making an inquiry to get an IP address for a DNS name such as w3.org</p>
+                                <p>The client computer will send a DNS query to one of their internet service provider's DNS servers. The DNS server looks in it's DNS database to tell whether it can answer the query authoritatively. If the DNS server can answer authoritatively, the DNS server answers the query and the DNS query process is complete.</p>
+                                <p>If the server cannot answer the query authoritatively it will look in its DNS cache of previous queries. If the DNS server finds a matching entry in its cache, it will answer the query with a non-authoritative answer based on the information in its cache and the DNS query process is complete.</p>
+                                <p>If the ISP DNS server did not have the DNS information in its DNS database or its DNS cache the DNS query process will use recursion to complete the DNS query. The ISP DNS server will use its root hints file to find information to contact other DNS servers. The root hints file specified DNS servers that are authoritative for the DNS domain root and top level domains in the DNS system. This includes the .com, .org, .net, .gov and other domain types. If the query is for www.w3.org the ISP DNS server would contact an authorititative server for the top level "org" domain and send an iterative query to the org DNS server asking for information about the authoritative server for w3.org. The org domain DNS server responds with the the nameserver information including IP address of the nameserver for w3.org. Then the ISP DNS server sends a query to the w3.org DNS server asking for the IP address of www.w3c.org. The w3.org DNS server sends an authoritative answer back to the ISP DNS server which is cached in the ISP DNS server cache and also sent to the client computer.</p>
+                                <p>If another client computer later does a request for information about www.w3.org the ISP DNS server has the information in its cache and will not neet to ask other DNS servers for additional information.</p>
+                                <li class="dark">
+                                    Network enumeration
+                                    </li>
+                                    <p>Network Enumeration is the discovery of hosts/devices on a network. Network Enumeration tends to use overt discovery protocols such as ICMP and SNMP to gather information. It may also scan various ports on remote hosts for looking for well known services in an attempt to further identify the function of a remote host.</p>
+                                   
+                                        <li class="dark">
+                                           
+                                            Operating system identification
+                                            </li>
+                                            <p>It is a process of identifying the operating system of target of victim.</p>
+                                           
+                                                <li class="dark">
+                                                   
+                                                    Ping sweeps
+                                                    </li>
+                                                    <p>In computing, a ping sweep is a method that can establish a range of IP addresses which map to live hosts.</p>
+                           </ul>
+                            
+                          
+                              
+                          </li>
+                          <li > <h3>TOOLS</h3></li>
+                          <ul>
+                              <li>NMAP</li>
+                              <p>NMAP is very useful tool for the scanning phase of ethical hacking in kali linux.NMAP usually uses command line interfase</p>
+                          </ul>
+                      </ul>
+
+                   </article>
+                  
+                </div>
+            </sections>
+            <footer><p>Blog website, copyright &copy; 2017  </p></footer>
+    </body>
+</html>
